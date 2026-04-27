@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      max-width: 420px;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      min-height: 80px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #fff;
+      color: #ff4b5c;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffe3e8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Sorry , maaf krdo ❤️</h1>
+    <p id="text">Hey Drishti, tap the button... 💖</p>
+
+    <button onclick="nextMessage()">Wanna see more❤️</button>
+  </div>
+
+  <script>
+    const messages = [
+      "Hey Drishti,My love, I don’t think words will ever be enough to describe how beautiful you truly are—not just your smile or your eyes, but your heart, your kindness, and the way you make everything feel so warm and alive. Every moment with you feels special, like time slows down just to let me enjoy you a little more. You’ve become my peace, my happiness, and my favorite part of every day. I’m so grateful to have you in my life, and I promise to always care for you, respect you, and love you more with each passing day. ❤️❤️",
+      "Your eyes always make me feel loving and your smile make me to feel happy everytime 💕",
+      "Hey Sona, sometimes I just sit and think about how lucky I am to have you. The way you smile, the way you talk, even the little things you do—they all mean so much to me. You make my world brighter without even trying. Your presence feels like comfort, like everything is going to be okay no matter what. I admire not just how beautiful you look, but how beautiful you are as a person. Being with you feels right, like something I never want to lose. I just want you to know that you are deeply loved, more than words can ever truly express. ❤️✨",
+      "Every moment with you feels special, like a dream I never want to wake up from, Sometimes i hurt you but that is not intentional. For me you are the one i love the most. pls gussa mtt raha kro yaar. 💫",
+      "I am truly lucky to have you in my life… I love you so much ❤️"
+    ];
+
+    let index = 0;
+
+    function nextMessage() {
+      if (index < messages.length) {
+        document.getElementById("text").innerText = messages[index];
+        index++;
+      } else {
+        document.getElementById("text").innerText = "Amr Misti Doi💍❤️";
+      }
+    }
+  </script>
+
+</body>
+</html>
